@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Singing in</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        fieldset{
+            padding:10px;
+            border: solid 1px 1px black;
+            width: 300px;
+            margin: auto;
+            background-color: aliceblue;
+        }
+        form{
+            width: 700px;
+            border: black 2px 1px solid;
+            margin: auto;
+            background-color: azure;
+        }
+        p{
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        input{
+            padding: 2px 5px;
+        }
+        label{
+            display: block;
+            font-weight: bold;
+        }
+        
+
+    </style>
+
+</head>
+<body>
+    <form action="" name="cadastro">
+        <fieldset name="cadastro-url">
+            <p>
+            <label for="email-input">
+              Please put your email
+            </label>
+                <input type="email" id="email-input"
+                pattern="[.*+@.*\.}">
+            </p>
+            <p>
+            <label for="send-password" >
+                please put your password
+            </label>
+                <input  type="password"
+                pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[$*&@#])(?:([0-9a-zA-Z$*&@#])(?!\1)){8,}$"
+                title=" Your password must contain uppercase lowercase letters, numbers and symbols"
+                maxlength="8">
+            </p>
+                <button id="send-password"> Enviar</button>
+     </fieldset>
+    </form>
+    
+</body>
+</html>
